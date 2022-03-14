@@ -1,4 +1,20 @@
-.padreHome{
+.subtitle{
     display: flex;
     justify-content: center;
+}
+.padreHome{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 650px) {
+
+    .padreHome{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }

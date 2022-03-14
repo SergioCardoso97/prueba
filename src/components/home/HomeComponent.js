@@ -1,10 +1,14 @@
 import React from "react";
 import './Home.css';
+import HomeEpisodeComponent from "./HomeEpisodeComponent";
+import HomeCharactersComponent from "./HomeCharactersComponent";
+
 
 function HomeComponent(){
     return(
-        <div className="padreHome">
-            <h1>Principales Personajes</h1>
+        <div>
+            <HomeCharactersComponent/>
+            <HomeEpisodeComponent/>
         </div>
     );
 }
