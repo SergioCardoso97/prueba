@@ -3,7 +3,9 @@ import './Home.css';
 
 function HomeComponent(){
     return(
-        <h1>Home Works</h1>
+        <div className="padreHome">
+            <h1>Principales Personajes</h1>
+        </div>
     );
 }
 export default HomeComponent;
