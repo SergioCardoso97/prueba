@@ -11,12 +11,17 @@ function HomeCharactersComponent(){
     //Get Principals Characters
     const [dataCharacter, setDataCharacter] = useState([]);
     useEffect(() => {
-        axios
-        .get('https://rickandmortyapi.com/api/character/1,2,3,4,5')
-        .then((resCharacter) => {
-            console.log(resCharacter.data);
-            setDataCharacter(resCharacter.data);
-        })
+        const getData = async () => {
+            await axios.get('https://rickandmortyapi.com/api/character/1,2,3,4,5')
+            .then((resCharacter) => {
+                console.log(resCharacter.data);
+                setDataCharacter(resCharacter.data);
+            })
+            .catch(err => {
+                console.log(err);
+            });
+        }
+        getData()    
     }, []);
     //printing Principals Characters
     for(let i = 0; i < dataCharacter.length/2; i++){

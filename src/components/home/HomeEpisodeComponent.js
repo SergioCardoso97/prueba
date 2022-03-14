@@ -17,7 +17,7 @@ function HomeEpisodeComponent(){
                 setDataEpisode(resEpisode.data);
             })
             .catch(err => {
-                console.log(err)
+                console.log(err);
             });
         }
         getData()
