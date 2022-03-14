@@ -1,0 +1,17 @@
+.padreHeader{
+    
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+.logoHeader{
+    height: 100px;
+    width: 300px;
+}
+.butonNav{
+    text-decoration: none;
+    color: white;
+}
