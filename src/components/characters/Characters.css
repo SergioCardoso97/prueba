@@ -1,0 +1,19 @@
+.subtitle{
+    display: flex;
+    justify-content: center;
+}
+.searchCharacters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.searchCharacters2{
+    
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
