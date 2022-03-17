@@ -7,7 +7,6 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import { FaSearch } from 'react-icons/fa';
 import Button from '@mui/material/Button';
-
 import axios from "axios";
 function CharactersComponent(){
     
@@ -23,7 +22,8 @@ function CharactersComponent(){
 
     function handleChangeOption(event){
         setSelectedValue(event.target.value);
-      };
+        console.log(event.target.value);
+    };
 
     function SearchStatus(event){
         event.preventDefault();

@@ -30,6 +30,7 @@ function HomeEpisodeComponent(){
                 <h1>Air Date: {dataEpisode[i].air_date}</h1>
                 <h1>Created: {dataEpisode[i].created}</h1>
                 <h1>Episode: {dataEpisode[i].episode}</h1>
+                <h1># Characters in the Episode: {dataEpisode[i].characters.length}</h1>
             </div>
         );
     }
@@ -40,6 +41,7 @@ function HomeEpisodeComponent(){
                 <h1>Air Date: {dataEpisode[i + 2].air_date}</h1>
                 <h1>Created: {dataEpisode[i + 2].created}</h1>
                 <h1>Episode: {dataEpisode[i + 2].episode}</h1>
+                <h1># Characters in the Episode: {dataEpisode[i].characters.length}</h1>
             </div>
         );
     }
@@ -50,6 +52,7 @@ function HomeEpisodeComponent(){
                 <h1>Air Date: {dataEpisode[i + 4].air_date}</h1>
                 <h1>Created: {dataEpisode[i + 4].created}</h1>
                 <h1>Episode: {dataEpisode[i + 4].episode}</h1>
+                <h1># Characters in the Episode: {dataEpisode[i].characters.length}</h1>
             </div>
         );
     }
