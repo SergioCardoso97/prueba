@@ -6,7 +6,7 @@ function FooterComponent(){
     return(
         <div className="padreFooter">
             <div className="hijoFooter">
-                <h3>Follow me in </h3> 
+                <h3>Follow my work</h3> 
             </div>
             <div className="hijoFooter">
                 <a href="https://github.com/SergioCardoso97"><img className="logoFooter" src={urlGitHub} alt=""/></a>

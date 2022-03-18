@@ -57,16 +57,6 @@ function EpisodesComponent(){
             </div>
         );
     }
-    // const GetEpisode = dataEpisode.map( (item) =>
-    //    <div >
-            
-    //         <h1 >Name: {`${item.name}`}</h1>
-    //         <h1>Air Date: {`${item.air_date}`}</h1>
-    //         <h1>Created: {`${item.created}`}</h1>
-    //         <h1>Episode: {`${item.episode}`}</h1>
-            
-    //    </div>
-    // );
     return(
         <div>
             <div className="subtitle">
