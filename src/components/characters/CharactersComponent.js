@@ -7,6 +7,10 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import { FaSearch } from 'react-icons/fa';
 import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 import axios from "axios";
 function CharactersComponent(){
     
@@ -128,32 +132,62 @@ function CharactersComponent(){
                             </div>;
     const GetStatus = dataCharacterStatus.map( (item) =>
        <div>
-            <img key={item.id} src={item.image}></img>
-            <h1>Name: {`${item.name}`}</h1>
-            <h1>Status: {`${item.status}`}</h1>
-            <h1>Species: {`${item.species}`}</h1>
-            <h1>Gender: {`${item.gender}`}</h1>
+            <Card sx={{ maxWidth: 400 }}>
+                    <CardMedia
+                        component="img"
+                        height="auto"
+                        image={item.image}
+                    />
+                    <CardContent >
+                        <Typography gutterBottom variant="h5" component="div">
+                        Name: {item.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Status: {item.status}, Species: {item.species}, Gender: {item.gender}
+                        </Typography>
+                    </CardContent>
+            </Card>
 
        </div>
     ); 
     const GetSpecies = dataCharacterSpecies.map( (item) =>
        <div>
-            <img key={item.id} src={item.image}></img>
-            <h1>Name: {`${item.name}`}</h1>
-            <h1>Status: {`${item.status}`}</h1>
-            <h1>Species: {`${item.species}`}</h1>
-            <h1>Gender: {`${item.gender}`}</h1>
+            <Card sx={{ maxWidth: 400 }}>
+                    <CardMedia
+                        component="img"
+                        height="auto"
+                        image={item.image}
+                    />
+                    <CardContent >
+                        <Typography gutterBottom variant="h5" component="div">
+                        Name: {item.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Status: {item.status}, Species: {item.species}, Gender: {item.gender}
+                        </Typography>
+                    </CardContent>
+            </Card>
 
        </div>
     );
     const GetGender = dataCharacterGender.map( (item) =>
        <div >
             
-            <img key={item.id} src={item.image}></img>
-            <h1>Name: {`${item.name}`}</h1>
-            <h1>Status: {`${item.status}`}</h1>
-            <h1>Species: {`${item.species}`}</h1>
-            <h1>Gender: {`${item.gender}`}</h1>
+            <Card sx={{ maxWidth: 400 }}>
+                    <CardMedia
+                        component="img"
+                        height="auto"
+                        image={item.image}
+                    />
+                    <CardContent >
+                        <Typography gutterBottom variant="h5" component="div">
+                        Name: {item.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Status: {item.status}, Species: {item.species}, Gender: {item.gender}
+                        </Typography>
+                    </CardContent>
+            </Card>
             
        </div>
     );

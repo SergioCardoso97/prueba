@@ -1,6 +1,10 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 
 
 function HomeCharactersComponent(){
@@ -27,20 +31,48 @@ function HomeCharactersComponent(){
     for(let i = 0; i < dataCharacter.length/2; i++){
         character1.push(
             <div className="hijoHome">
-                <img src={dataCharacter[i].image} alt=""></img>
-                <h1>Name: {dataCharacter[i].name}</h1>
-                <h1>Status: {dataCharacter[i].status}</h1>
-                <h1>Species: {dataCharacter[i].species}</h1>
+                <Card sx={{ maxWidth: 400 }}>
+                    <CardMedia
+                        component="img"
+                        height="auto"
+                        image={dataCharacter[i].image}
+                    />
+                    <CardContent >
+                        <Typography gutterBottom variant="h5" component="div">
+                        Name: {dataCharacter[i].name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Status: {dataCharacter[i].status}, Species: {dataCharacter[i].species}, Gender: {dataCharacter[i].gender}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Appears in: {dataCharacter[i].episode.length} episodes, Location: {dataCharacter[i].location.name}.
+                        </Typography>
+                    </CardContent>
+                </Card>
             </div>
         );
     }
     for(let i = 3; i < dataCharacter.length; i++){
         character2.push(
             <div className="hijoHome">
-                <img src={dataCharacter[i].image} alt=""></img>
-                <h1>Name: {dataCharacter[i].name}</h1>
-                <h1>Status: {dataCharacter[i].status}</h1>
-                <h1>Species: {dataCharacter[i].species}</h1>
+                <Card sx={{ maxWidth: 400 }}>
+                    <CardMedia
+                        component="img"
+                        height="auto"
+                        image={dataCharacter[i].image}
+                    />
+                    <CardContent >
+                        <Typography gutterBottom variant="h5" component="div">
+                        Name: {dataCharacter[i].name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Status: {dataCharacter[i].status}, Species: {dataCharacter[i].species}, Gender: {dataCharacter[i].gender}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Appears in: {dataCharacter[i].episode.length} episodes, Location: {dataCharacter[i].location.name}.
+                        </Typography>
+                    </CardContent>
+                </Card>
             </div>
         );
     }

@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 function HomeEpisodeComponent(){
     var episode1 = [];
@@ -25,35 +27,73 @@ function HomeEpisodeComponent(){
     // //printing The best Episodes
     for(let i = 0; i < dataEpisode.length/3; i++){
         episode1.push(
-            <div className="hijoHome">
-                <h1>Title: {dataEpisode[i].name}</h1>
-                <h1>Air Date: {dataEpisode[i].air_date}</h1>
-                <h1>Created: {dataEpisode[i].created}</h1>
-                <h1>Episode: {dataEpisode[i].episode}</h1>
-                <h1># Characters in the Episode: {dataEpisode[i].characters.length}</h1>
-            </div>
+            <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                    <Typography variant="h3" component="div">
+                        Title: {dataEpisode[i].name}.
+                    </Typography>
+                    <Typography variant="h4" color="text.secondary">
+                        Air Date: {dataEpisode[i].air_date}.
+                    </Typography>
+                    <Typography variant="h4" color="text.secondary">
+                        Created: {dataEpisode[i].created}.
+                    </Typography>
+                    <Typography variant="h5" color="text.secondary">
+                        Episode: {dataEpisode[i].episode}. 
+                    </Typography>
+                    <Typography variant="h5" color="text.secondary">
+                        # Characters in the Episode: {dataEpisode[i].characters.length}.
+                    </Typography>
+                    </CardContent>
+            </Card>
         );
     }
     for(let i = 0; i < dataEpisode.length/3; i++){
         episode2.push(
             <div className="hijoHome">
-                <h1>Title: {dataEpisode[i + 2].name}</h1>
-                <h1>Air Date: {dataEpisode[i + 2].air_date}</h1>
-                <h1>Created: {dataEpisode[i + 2].created}</h1>
-                <h1>Episode: {dataEpisode[i + 2].episode}</h1>
-                <h1># Characters in the Episode: {dataEpisode[i].characters.length}</h1>
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                    <Typography variant="h3" component="div">
+                        Title: {dataEpisode[i].name}.
+                    </Typography>
+                    <Typography variant="h4" color="text.secondary">
+                        Air Date: {dataEpisode[i].air_date}.
+                    </Typography>
+                    <Typography variant="h4" color="text.secondary">
+                        Created: {dataEpisode[i].created}.
+                    </Typography>
+                    <Typography variant="h5" color="text.secondary">
+                        Episode: {dataEpisode[i].episode}. 
+                    </Typography>
+                    <Typography variant="h5" color="text.secondary">
+                        # Characters in the Episode: {dataEpisode[i].characters.length}.
+                    </Typography>
+                    </CardContent>
+                </Card>
             </div>
         );
     }
     for(let i = 0; i < dataEpisode.length/3; i++){
         episode3.push(
-            <div className="hijoHome">
-                <h1>Title: {dataEpisode[i + 4].name}</h1>
-                <h1>Air Date: {dataEpisode[i + 4].air_date}</h1>
-                <h1>Created: {dataEpisode[i + 4].created}</h1>
-                <h1>Episode: {dataEpisode[i + 4].episode}</h1>
-                <h1># Characters in the Episode: {dataEpisode[i].characters.length}</h1>
-            </div>
+            <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                    <Typography variant="h3" component="div">
+                        Title: {dataEpisode[i].name}.
+                    </Typography>
+                    <Typography variant="h4" color="text.secondary">
+                        Air Date: {dataEpisode[i].air_date}.
+                    </Typography>
+                    <Typography variant="h4" color="text.secondary">
+                        Created: {dataEpisode[i].created}.
+                    </Typography>
+                    <Typography variant="h5" color="text.secondary">
+                        Episode: {dataEpisode[i].episode}. 
+                    </Typography>
+                    <Typography variant="h5" color="text.secondary">
+                        # Characters in the Episode: {dataEpisode[i].characters.length}.
+                    </Typography>
+                    </CardContent>
+            </Card>
         );
     }
     return(
