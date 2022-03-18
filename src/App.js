@@ -15,6 +15,7 @@ function App() {
       <HeaderComponent/>
       <Routes>
         <Route path='/prueba/' exact element={<HomeComponent/>} />
+        <Route path='' element={<HomeComponent/>} />
         <Route path='/characters' element={<CharactersComponent/>} />
         <Route path='/episodes' element={<EpisodesComponent/>} />
         <Route path='/madeby' element={<MadeByComponent/>} />
