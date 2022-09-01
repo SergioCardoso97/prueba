@@ -15,7 +15,7 @@ function App() {
       <HeaderComponent/>
       <Routes>
         <Route path='/pruebaReact/' element={<HomeComponent/>} />
-        <Route path='' exact element={<HomeComponent/>} />
+        {/* <Route path='' exact element={<HomeComponent/>} /> */}
         <Route path='/characters' element={<CharactersComponent/>} />
         <Route path='/episodes' element={<EpisodesComponent/>} />
         <Route path='/madeby' element={<MadeByComponent/>} />
