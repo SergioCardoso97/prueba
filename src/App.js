@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
       <HeaderComponent/>
       <Routes>
-        <Route path='/prueba/' exact element={<HomeComponent/>} />
+        <Route path='/pruebaReact' exact element={<HomeComponent/>} />
         <Route path='' exact element={<HomeComponent/>} />
         <Route path='/characters' element={<CharactersComponent/>} />
         <Route path='/episodes' element={<EpisodesComponent/>} />
