@@ -14,11 +14,11 @@ function App() {
       <BrowserRouter>
       <HeaderComponent/>
       <Routes>
-        <Route path='/pruebaReact/' exact element={<HomeComponent/>} />
-        <Route path='/pruebaReact/' exact element={<HomeComponent/>} />
-        <Route path='/pruebaReact/characters' element={<CharactersComponent/>} />
-        <Route path='/pruebaReact/episodes' element={<EpisodesComponent/>} />
-        <Route path='/pruebaReact/madeby' element={<MadeByComponent/>} />
+        <Route path='/prueba/' exact element={<HomeComponent/>} />
+        <Route path='' exact element={<HomeComponent/>} />
+        <Route path='/characters' element={<CharactersComponent/>} />
+        <Route path='/episodes' element={<EpisodesComponent/>} />
+        <Route path='/madeby' element={<MadeByComponent/>} />
       </Routes>
       <FooterComponent/>
     </BrowserRouter>
